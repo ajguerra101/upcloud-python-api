@@ -13,6 +13,10 @@ install:
 script:
   - tox
   - tox -e py27 -- -x --integration-tests
+after_success:
+- pip install coveralls
+- coverage run --source=upcloud_api setup.py test
+- coveralls
 matrix:
   allow_failures:
   - python: "nightly"
