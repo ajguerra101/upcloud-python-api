@@ -13,6 +13,7 @@ setup(
     packages=['upcloud_api', 'upcloud_api.cloud_manager'],
     download='https://github.com/UpCloudLtd/upcloud-python-api/tarball/v0.4.3',
     license='MIT',
+    python_requires='>=2.6,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*',
     install_requires=[
         'requests>=2.6.0',
         'six>=1.9.0'
